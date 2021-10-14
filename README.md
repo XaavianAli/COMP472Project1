@@ -16,7 +16,7 @@ Git repository for Mini Project 1 by Team XDJ
 - [ ] Create bbc-discussion.txt and answer questions in pdf
 
 ### Task 2
-- [ ] Plot distribution of instances
+- [x] Plot distribution of instances
 - [ ] Convert all ordinal and nominal features in numerical format
 - [ ] split data set
 - [ ] Run different classifiers with parameters in pdf: 
