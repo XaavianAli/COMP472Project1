@@ -4,12 +4,12 @@ Git repository for Mini Project 1 by Team XDJ
 ## TO-DO
 
 ### Task 1
-- [ ] Plot distribution of the instances
-- [ ] Load corpus using latin1 encoding
-- [ ] Preprocess data set (store frequency of each word in data set)
-- [ ] Split data set
-- [ ] Train Naive Bayes Classifier
-- [ ] Save info to bbc-performance.txt
+- [x] Plot distribution of the instances
+- [x] Load corpus using latin1 encoding
+- [x] Preprocess data set (store frequency of each word in data set)
+- [x] Split data set
+- [x] Train Naive Bayes Classifier
+- [x] Save info to bbc-performance.txt
 - [ ] Re-do steps 6 & 7 in PDF and name it "MultinomialNB default values try 2"
 - [ ] Re-do steps 6 & 7 with smoothing 0.0001
 - [ ] Re-do steps 6 & 7 with smoothing 0.9
