@@ -17,7 +17,7 @@ Git repository for Mini Project 1 by Team XDJ
 
 ### Task 2
 - [x] Plot distribution of instances
-- [ ] Convert all ordinal and nominal features in numerical format
+- [x] Convert all ordinal and nominal features in numerical format
 - [ ] split data set
 - [ ] Run different classifiers with parameters in pdf: 
   - [ ] Naive Bayes
