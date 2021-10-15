@@ -15,6 +15,8 @@ Git repository for Mini Project 1 by Team XDJ
 - [x] Re-do steps 6 & 7 with smoothing 0.9
 - [x] Create bbc-discussion.txt and answer questions in pdf
 
+- [] Complete the bbc-performance.txt file
+
 ### Task 2
 - [x] Plot distribution of instances
 - [x] Convert all ordinal and nominal features in numerical format
