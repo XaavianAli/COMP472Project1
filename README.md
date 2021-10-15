@@ -13,7 +13,7 @@ Git repository for Mini Project 1 by Team XDJ
 - [x] Re-do steps 6 & 7 in PDF and name it "MultinomialNB default values try 2"
 - [x] Re-do steps 6 & 7 with smoothing 0.0001
 - [x] Re-do steps 6 & 7 with smoothing 0.9
-- [ ] Create bbc-discussion.txt and answer questions in pdf
+- [x] Create bbc-discussion.txt and answer questions in pdf
 
 ### Task 2
 - [x] Plot distribution of instances
