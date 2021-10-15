@@ -1,0 +1,11 @@
+11.
+
+a)
+
+Accuracy is well suited because all the classes have similar importance and because not precision nor recall is more important than the other for this kind of classifier. It will therefore provide good information on the performances.
+
+b)
+
+-Performances of step (8) are the same as those of step (7) because we used the same split and no parameter has been modified. The calculations were therefore done the same way in both steps.
+-Performances of step (9) are more accurate because of the only small amount of smoothing applied. Step (7) and step (8) have a smoothing value of 1 and too much smoothing may reduce the overall performance. However, a small smoothing increased here performances by adjusting for the words not appearing in a class.
+-Performances of step (10) also are similar to those of step (7) their smoothing values are similar (0.9 vs 1.0). Step (10) is however a little more accurate because as explained above, too much smoothing may reduce the overall performance.
