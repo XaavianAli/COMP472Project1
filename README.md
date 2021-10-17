@@ -19,13 +19,13 @@ Git repository for Mini Project 1 by Team XDJ
 ### Task 2
 - [x] Plot distribution of instances
 - [x] Convert all ordinal and nominal features in numerical format
-- [ ] split data set
+- [x] split data set
 - [ ] Run different classifiers with parameters in pdf: 
-  - [ ] Naive Bayes
-  - [ ] Base Decision Tree
+  - [x] Naive Bayes
+  - [x] Base Decision Tree
   - [ ] Top Decision Tree
-  - [ ] Perceptron
-  - [ ] Base Multi-Layered Perceptron
+  - [x] Perceptron
+  - [x] Base Multi-Layered Perceptron
   - [ ] Top Multi-Layered Perceptron
 - [ ] Save info to drugs-performance.txt
 - [ ] Redo step 6 in PDF 10 times for each model 
