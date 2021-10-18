@@ -11,7 +11,7 @@ To avoid impacting Julien's solution for task 1, I simply included each subfolde
 
 business/[anyfolder]/001.txt would be a valid relative path.
 
-Our submission should have all the files strutcured in the correct way so the solution can run without any issues.
+Our submission should have all the files structured in the correct way so the solution can run without any issues.
 
 BBC/business/001.txt should also be a valid relative path. (Both are necessary).
 
