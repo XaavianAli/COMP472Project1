@@ -1,0 +1,196 @@
+*******************************
+Gaussian Naive Bayes Classifier
+*******************************
+
+Confusion Matrix:
+[[ 2  3  0  0  0]
+ [ 2  1  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  0  0 15  0]
+ [ 7  4  4  9  0]]
+
+Analysis:
+              precision    recall  f1-score   support
+
+       drugA       0.18      0.40      0.25         5
+       drugB       0.12      0.33      0.18         3
+       drugC       0.43      1.00      0.60         3
+       drugX       0.62      1.00      0.77        15
+       drugY       1.00      0.00      0.00        24
+
+    accuracy                           0.42        50
+   macro avg       0.47      0.55      0.36        50
+weighted avg       0.72      0.42      0.30        50
+
+
+******************
+Base Decision Tree
+******************
+
+Confusion Matrix:
+[[ 1  0  0  0  4]
+ [ 1  0  0  0  2]
+ [ 0  0  3  0  0]
+ [ 0  0  0 10  5]
+ [ 5  0  4  7  8]]
+
+Analysis:
+              precision    recall  f1-score   support
+
+       drugA       0.14      0.20      0.17         5
+       drugB       1.00      0.00      0.00         3
+       drugC       0.43      1.00      0.60         3
+       drugX       0.59      0.67      0.62        15
+       drugY       0.42      0.33      0.37        24
+
+    accuracy                           0.44        50
+   macro avg       0.52      0.44      0.35        50
+weighted avg       0.48      0.44      0.42        50
+
+
+*****************
+Top Decision Tree
+*****************
+
+Confusion Matrix:
+[[ 1  0  0  0  4]
+ [ 1  0  0  0  2]
+ [ 0  0  3  0  0]
+ [ 0  0  0 15  0]
+ [ 5  0  4  9  6]]
+
+Analysis:
+              precision    recall  f1-score   support
+
+       drugA       0.14      0.20      0.17         5
+       drugB       1.00      0.00      0.00         3
+       drugC       0.43      1.00      0.60         3
+       drugX       0.62      1.00      0.77        15
+       drugY       0.50      0.25      0.33        24
+
+    accuracy                           0.50        50
+   macro avg       0.54      0.49      0.37        50
+weighted avg       0.53      0.50      0.44        50
+
+
+**********
+Perceptron
+**********
+
+Confusion Matrix:
+[[ 0  5  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  2  0  1 12]
+ [ 0 12  4  3  5]]
+
+Analysis:
+              precision    recall  f1-score   support
+
+       drugA       1.00      0.00      0.00         5
+       drugB       0.14      1.00      0.24         3
+       drugC       0.43      1.00      0.60         3
+       drugX       0.25      0.07      0.11        15
+       drugY       0.29      0.21      0.24        24
+
+    accuracy                           0.24        50
+   macro avg       0.42      0.46      0.24        50
+weighted avg       0.35      0.24      0.20        50
+
+
+*****************************
+Base Multi-Layered Perceptron
+*****************************
+
+Confusion Matrix:
+[[ 0  0  0  0  5]
+ [ 0  0  0  0  3]
+ [ 0  0  0  0  3]
+ [ 0  0  0  0 15]
+ [ 0  0  0  0 24]]
+
+Analysis:
+              precision    recall  f1-score   support
+
+       drugA       1.00      0.00      0.00         5
+       drugB       1.00      0.00      0.00         3
+       drugC       1.00      0.00      0.00         3
+       drugX       1.00      0.00      0.00        15
+       drugY       0.48      1.00      0.65        24
+
+    accuracy                           0.48        50
+   macro avg       0.90      0.20      0.13        50
+weighted avg       0.75      0.48      0.31        50
+
+
+****************************
+Top Multi-Layered Perceptron
+****************************
+
+Confusion Matrix:
+[[ 1  0  0  0  4]
+ [ 1  0  0  0  2]
+ [ 0  0  2  0  1]
+ [ 0  0  0  9  6]
+ [ 5  0  3  5 11]]
+
+Analysis:
+              precision    recall  f1-score   support
+
+       drugA       0.14      0.20      0.17         5
+       drugB       1.00      0.00      0.00         3
+       drugC       0.40      0.67      0.50         3
+       drugX       0.64      0.60      0.62        15
+       drugY       0.46      0.46      0.46        24
+
+    accuracy                           0.46        50
+   macro avg       0.53      0.39      0.35        50
+weighted avg       0.51      0.46      0.45        50
+
+Naive Bayes:
+Average Accuracy: 42.4
+Average Macro-Average F1: 36.9
+Average Weighted-Average F1: 31.1
+Average Accuracy Standard Deviation: 0.445
+Average Macro-Average F1 Standard Deviation: 0.566
+Average Weighted-Average F1 Standard Deviation: 0.522
+
+Base Decision Tree:
+Average Accuracy: 46.4
+Average Macro-Average F1: 35.5
+Average Weighted-Average F1: 43.4
+Average Accuracy Standard Deviation: 0.445
+Average Macro-Average F1 Standard Deviation: 0.571
+Average Weighted-Average F1 Standard Deviation: 0.422
+
+Top Decision Tree:
+Average Accuracy: 47.2
+Average Macro-Average F1: 37.9
+Average Weighted-Average F1: 44.9
+Average Accuracy Standard Deviation: 0.421
+Average Macro-Average F1 Standard Deviation: 0.561
+Average Weighted-Average F1 Standard Deviation: 0.401
+
+Perceptron:
+Average Accuracy: 45.8
+Average Macro-Average F1: 28.2
+Average Weighted-Average F1: 38.3
+Average Accuracy Standard Deviation: 0.569
+Average Macro-Average F1 Standard Deviation: 0.945
+Average Weighted-Average F1 Standard Deviation: 0.482
+
+Base Multi-Layered Perceptron:
+Average Accuracy: 44.8
+Average Macro-Average F1: 12.4
+Average Weighted-Average F1: 25.6
+Average Accuracy Standard Deviation: 0.457
+Average Macro-Average F1 Standard Deviation: 0.08
+Average Weighted-Average F1 Standard Deviation: 0.478
+
+Top Multi-Layered Perceptron:
+Average Accuracy: 46.2
+Average Macro-Average F1: 30.6
+Average Weighted-Average F1: 41.3
+Average Accuracy Standard Deviation: 0.442
+Average Macro-Average F1 Standard Deviation: 0.806
+Average Weighted-Average F1 Standard Deviation: 0.713
