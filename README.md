@@ -1,36 +1,22 @@
 # COMP472Project1
 Git repository for Mini Project 1 by Team XDJ
 
-## TO-DO
+Instructions for how to run:
+If you try to run this without the dataset structured in the way the submission has the folders structured, it will not run. 
+This is because of some strange behavior I found with the load files function. 
+If pointed at a folder which directly contained files (IE: the subfolders of the BBC folder), it would not load any files. 
+If it was pointed at a folder with a subfolder that contained the output files, everything would load as normal. 
+To avoid impacting Julien's solution for task 1, I simply included each subfolder with another subfolder within it at the root of the solution such that 
+business/[anyfolder]/001.txt would be a valid relative path.
+Our submission should have all the files strutcured in the correct way so the solution can run without any issues.
 
-### Task 1
-- [x] Plot distribution of the instances
-- [x] Load corpus using latin1 encoding
-- [x] Preprocess data set (store frequency of each word in data set)
-- [x] Split data set
-- [x] Train Naive Bayes Classifier
-- [x] Save info to bbc-performance.txt
-- [x] Re-do steps 6 & 7 in PDF and name it "MultinomialNB default values try 2"
-- [x] Re-do steps 6 & 7 with smoothing 0.0001
-- [x] Re-do steps 6 & 7 with smoothing 0.9
-- [x] Create bbc-discussion.txt and answer questions in pdf
-- [x] Complete the bbc-performance.txt file
+BBC/business/001.txt should also be a valid relative path. (Both are necessary).
 
-### Task 2
-- [x] Plot distribution of instances
-- [x] Convert all ordinal and nominal features in numerical format
-- [x] split data set
-- [x] Run different classifiers with parameters in pdf: 
-  - [x] Naive Bayes
-  - [x] Base Decision Tree
-  - [x] Top Decision Tree
-  - [x] Perceptron
-  - [x] Base Multi-Layered Perceptron
-  - [x] Top Multi-Layered Perceptron
-- [x] Save info to drugs-performance.txt
-- [x] Redo step 6 in PDF 10 times for each model 
+drug200.csv should be a valid relative path.
 
-### Presentation (Slides??)
-- [x] Analysis of data set
-- [x] Analysis of results
-- [x] Description of responsibilities of each member
+1) The file 'task 1 and 2 graphs and counting.py' contains sections f) - k) from part 7 of Task 1 as well as the distribution graphs from task 1 and 2.
+2) Task 1 is primarily located in a Juptyer notebook file 'Task1.ipynb'. 
+There are a few missing sections to do with counting numbers. These are handled by the aforementioned file.
+3) Task 2 is primarily located in the python file: 'Task2.py'.
+
+Assuming the above file structure is correct, each of the files should be able to run.
