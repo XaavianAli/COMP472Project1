@@ -14,7 +14,7 @@ Git repository for Mini Project 1 by Team XDJ
 - [x] Re-do steps 6 & 7 with smoothing 0.0001
 - [x] Re-do steps 6 & 7 with smoothing 0.9
 - [x] Create bbc-discussion.txt and answer questions in pdf
-- [ ] Complete the bbc-performance.txt file
+- [x] Complete the bbc-performance.txt file
 
 ### Task 2
 - [x] Plot distribution of instances
@@ -31,6 +31,6 @@ Git repository for Mini Project 1 by Team XDJ
 - [x] Redo step 6 in PDF 10 times for each model 
 
 ### Presentation (Slides??)
-- [ ] Analysis of data set
-- [ ] Analysis of results
-- [ ] Description of responsibilities of each member
+- [x] Analysis of data set
+- [x] Analysis of results
+- [x] Description of responsibilities of each member
