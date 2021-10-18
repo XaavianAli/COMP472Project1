@@ -2,6 +2,7 @@
 Git repository for Mini Project 1 by Team XDJ
 
 Instructions for how to run:
+
 If you try to run this without the dataset structured in the way the submission has the folders structured, it will not run. 
 This is because of some strange behavior I found with the load files function. 
 If pointed at a folder which directly contained files (IE: the subfolders of the BBC folder), it would not load any files. 
