@@ -8,7 +8,9 @@ This is because of some strange behavior I (Donovan) found with the datasets.loa
 If pointed at a folder which directly contained files (IE: the subfolders of the BBC folder), it would not load any files. 
 If it was pointed at a folder with a subfolder that contained the output files, everything would load as normal. 
 To avoid impacting Julien's solution for task 1, I simply included each subfolder with another subfolder within it at the root of the solution such that 
+
 business/[anyfolder]/001.txt would be a valid relative path.
+
 Our submission should have all the files strutcured in the correct way so the solution can run without any issues.
 
 BBC/business/001.txt should also be a valid relative path. (Both are necessary).
