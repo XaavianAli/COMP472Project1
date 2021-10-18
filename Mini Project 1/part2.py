@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
@@ -38,7 +39,7 @@ f.write("\n\n")
 
 f.write("Analysis:\n")
 target= ["drugA","drugB","drugC","drugX","drugY"]
-f.write(classification_report(drug_test, gnbpredicted, target_names=target) + "\n\n")
+f.write(classification_report(drug_test, gnbpredicted, target_names=target, zero_division=1) + "\n\n")
 
 
 # Base Decision Tree
@@ -55,16 +56,18 @@ f.write("\n\n")
 
 f.write("Analysis:\n")
 target= ["drugA","drugB","drugC","drugX","drugY"]
-f.write(classification_report(drug_test, bdtpredicted, target_names=target) + "\n\n")
+f.write(classification_report(drug_test, bdtpredicted, target_names=target, zero_division=1) + "\n\n")
 
-""" Incorrectly using the Constructor maybe??? im not sure yet
+
 # Top Decision Tree
 
-tdt = GridSearchCV()
+parameters = {"max_depth":[40,50], "min_samples_split":[30,40,50], "criterion":["gini","entropy"]}
+a = DecisionTreeClassifier()
+tdt = GridSearchCV(a, parameters)
 tdt.fit(features_train, drug_train)
 tdtpredicted = tdt.predict(features_test)
 
-f.write("******************\nBase Decision Tree\n******************\n\n")
+f.write("*****************\nTop Decision Tree\n*****************\n\n")
 
 f.write("Confusion Matrix:\n")
 f.write(str(confusion_matrix(drug_test, tdtpredicted)))
@@ -72,8 +75,8 @@ f.write("\n\n")
 
 f.write("Analysis:\n")
 target= ["drugA","drugB","drugC","drugX","drugY"]
-f.write(classification_report(drug_test, tdtpredicted, target_names=target) + "\n\n")
-"""
+f.write(classification_report(drug_test, tdtpredicted, target_names=target, zero_division=1) + "\n\n")
+
 
 # Perceptron
 
@@ -89,12 +92,12 @@ f.write("\n\n")
 
 f.write("Analysis:\n")
 target= ["drugA","drugB","drugC","drugX","drugY"]
-f.write(classification_report(drug_test, perpredicted, target_names=target) + "\n\n")
+f.write(classification_report(drug_test, perpredicted, target_names=target, zero_division=1) + "\n\n")
 
 
 # Base Multi-Layered Perceptron
 
-mlp = MLPClassifier(hidden_layer_sizes=100, activation="logistic", solver="sgd")
+mlp = MLPClassifier(hidden_layer_sizes=100, activation="logistic", solver="sgd", max_iter=1000)
 mlp.fit(features_train, drug_train)
 mlppredicted = mlp.predict(features_test)
 
@@ -106,12 +109,14 @@ f.write("\n\n")
 
 f.write("Analysis:\n")
 target= ["drugA","drugB","drugC","drugX","drugY"]
-f.write(classification_report(drug_test, mlppredicted, target_names=target) + "\n\n")
+f.write(classification_report(drug_test, mlppredicted, target_names=target, zero_division=1) + "\n\n")
 
-""" No Idea What the constructor is or how to implement the parameters
+
 # Top Multi-Layered Perceptron
 
-tlp = MLPClassifier()
+parameters = {"activation":["identity","logistic","tanh","relu"], "solver":["adam","sgd"], "hidden_layer_sizes":[(30,50),(10,10,10)]}
+b = MLPClassifier(max_iter=5000)
+tlp = GridSearchCV(b, parameters)
 tlp.fit(features_train, drug_train)
 tlppredicted = tlp.predict(features_test)
 
@@ -123,5 +128,6 @@ f.write("\n\n")
 
 f.write("Analysis:\n")
 target= ["drugA","drugB","drugC","drugX","drugY"]
-f.write(classification_report(drug_test, tlppredicted, target_names=target) + "\n\n")
-"""
+f.write(classification_report(drug_test, tlppredicted, target_names=target, zero_division=1) + "\n\n")
+
+f.close()
