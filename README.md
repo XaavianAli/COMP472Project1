@@ -19,7 +19,7 @@ drug200.csv should be a valid relative path.
 
 1) The file 'task 1 and 2 graphs and counting.py' contains sections f) - k) from part 7 of Task 1 as well as the distribution graphs from task 1 and 2. (Donovan's Part)
 2) Task 1 is primarily located in a Juptyer notebook file 'Task1.ipynb'. (Julien's Part)
-There are a few missing sections to do with counting numbers. These are handled by the aforementioned file.
+There are a few missing sections to do with counting numbers. These are handled by the aforementioned counting file.
 3) Task 2 is primarily located in the python file: 'Task2.py'. (Xaavian's Part)
 
 Assuming the above file structure is correct, each of the files should be able to run.
